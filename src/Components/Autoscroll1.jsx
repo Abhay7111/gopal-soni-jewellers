@@ -33,35 +33,27 @@ function Autoscroll1() {
   >
     <SwiperSlide className='flex flex-col gap-1'>
         <NavLink to="/collections"><img className='h-[86%]' src={img1} /></NavLink>
-        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Bracelet</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
         <NavLink to="/collections"><img className='h-[86%]' src={img2} /></NavLink>
-        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>pendant set</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
         <NavLink to="/collections"><img className='h-[86%]' src={img3} /></NavLink>
-        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>ring</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
         <NavLink to="/collections"><img className='h-[86%]' src={img4} /></NavLink>
-        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Necklace sets</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
         <NavLink to="/collections"><img className='h-[86%]' src={img5} /></NavLink>
-        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Earrings</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
         <NavLink to="/collections"><img className='h-[86%]' src={img6} /></NavLink>
-        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Mangalsutra</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
         <NavLink to="/collections"><img className='h-[86%]' src={img7} /></NavLink>
-        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Mangalsutra</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
         <NavLink to="/collections"><img className='h-[86%]' src={img8} /></NavLink>
-        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Mangalsutra</p>
     </SwiperSlide>
   </Swiper>
   )
