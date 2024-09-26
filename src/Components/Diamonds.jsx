@@ -13,7 +13,7 @@ function Diamonds() {
   return (
     <div className='w-full sm:h-[90vh] p-5 flex items-center justify-between overflow-hidden relative rounded-2xl sm:rounded-sm'>
         <div className='flex flex-col h-full gap-5 items-center justify-center relative'>
-            <p className='relative sm:text-[5vw] text-[11vw] font-semibold text-zinc-100 w-full sm:w-fit text-start z-20 hidden sm:block'>Diamonds</p>
+            <p className='relative sm:text-[5vw] text-[11vw] font-semibold text-zinc-100 w-full sm:w-fit text-start z-20 hidden sm:block uppercase'>Diamonds</p>
             <div className='w-fit hidden sm:block'>
                 <Autoscroll1/>
             </div>
