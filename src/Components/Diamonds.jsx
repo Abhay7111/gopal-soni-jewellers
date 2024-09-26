@@ -8,6 +8,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+
 function Diamonds() {
   return (
     <div className='w-full sm:h-[90vh] p-5 flex items-center justify-between overflow-hidden relative'>

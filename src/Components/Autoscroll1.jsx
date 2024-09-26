@@ -6,6 +6,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { NavLink } from 'react-router-dom';
+import img1 from '../assets/01.jpg'
+import img2 from '../assets/02.jpg'
+import img3 from '../assets/03.jpg'
+import img4 from '../assets/04.jpg'
+import img5 from '../assets/05.jpg'
+import img6 from '../assets/06.jpg'
+import img7 from '../assets/07.jpg'
+import img8 from '../assets/08.jpg'
 
 function Autoscroll1() {
   return (
@@ -24,27 +32,35 @@ function Autoscroll1() {
     className='sm:w-[45vw] h-[30vh] w-full'
   >
     <SwiperSlide className='flex flex-col gap-1'>
-        <NavLink to="/collections"><img className='h-[86%]' src="https://manubhai.in/images/new-home/2022/diamond/01-bracelet.jpg" /></NavLink>
+        <NavLink to="/collections"><img className='h-[86%]' src={img1} /></NavLink>
         <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Bracelet</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
-        <NavLink to="/collections"><img className='h-[86%]' src="https://manubhai.in/images/new-home/2022/diamond/05-pendant-set.jpg" /></NavLink>
+        <NavLink to="/collections"><img className='h-[86%]' src={img2} /></NavLink>
         <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>pendant set</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
-        <NavLink to="/collections"><img className='h-[86%]' src="https://manubhai.in/images/new-home/2022/diamond/02-ring.jpg" /></NavLink>
+        <NavLink to="/collections"><img className='h-[86%]' src={img3} /></NavLink>
         <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>ring</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
-        <NavLink to="/collections"><img className='h-[86%]' src="https://manubhai.in/images/new-home/2022/diamond/04-necklace.jpg" /></NavLink>
+        <NavLink to="/collections"><img className='h-[86%]' src={img4} /></NavLink>
         <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Necklace sets</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
-        <NavLink to="/collections"><img className='h-[86%]' src="https://manubhai.in/images/new-home/2022/diamond/03-earing.jpg" /></NavLink>
+        <NavLink to="/collections"><img className='h-[86%]' src={img5} /></NavLink>
         <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Earrings</p>
     </SwiperSlide>
     <SwiperSlide className='flex flex-col gap-1'>
-        <NavLink to="/collections"><img className='h-[86%]' src="https://manubhai.in/images/new-home/2022/diamond/06-mangalsutra.jpg" /></NavLink>
+        <NavLink to="/collections"><img className='h-[86%]' src={img6} /></NavLink>
+        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Mangalsutra</p>
+    </SwiperSlide>
+    <SwiperSlide className='flex flex-col gap-1'>
+        <NavLink to="/collections"><img className='h-[86%]' src={img7} /></NavLink>
+        <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Mangalsutra</p>
+    </SwiperSlide>
+    <SwiperSlide className='flex flex-col gap-1'>
+        <NavLink to="/collections"><img className='h-[86%]' src={img8} /></NavLink>
         <p className='uppercase text-xl font-bold text-zinc-100 w-full text-center mt-2'>Mangalsutra</p>
     </SwiperSlide>
   </Swiper>
