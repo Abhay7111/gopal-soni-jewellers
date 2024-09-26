@@ -29,7 +29,7 @@ function Autoscroll1() {
     slidesPerView={4}
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
-    className='sm:w-[45vw] h-[30vh] w-full'
+    className='sm:w-[60vw] h-[35vh] w-full mt-10'
   >
     <SwiperSlide className='flex flex-col gap-1'>
         <NavLink to="/collections"><img className='h-[86%]' src={img1} /></NavLink>

@@ -17,35 +17,16 @@ import { NavLink } from 'react-router-dom';
 
 function Autoscrollsm() {
   return (
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-      spaceBetween={10}
-      slidesPerView={1}
-      autoplay={{
-        delay: 2500,
-        disableOnInteraction: false,
-      }}
-      loop={true}
-      speed={1000}
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      className="sm:hidden block"
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
-    >
-      {[img2, img1, img3, img4, img5, img6, img7, img8].map((img, index) => (
-        <SwiperSlide key={index}>
-          <NavLink to="/collections">
-            <img 
-              src={img} 
-              alt={`Slide ${index + 1}`} 
-              className="ml-[10vw] mr-[5vw] w-96 h-60 object-cover" 
-              loading="lazy"
-            />
-          </NavLink>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className='flex items-center justify-start gap-10'>
+      <img src={img1} className='w-full h-fit object-cover'/>
+      <img src={img2} className='w-full h-fit object-cover'/>
+      <img src={img3} className='w-full h-fit object-cover'/>
+      <img src={img4} className='w-full h-fit object-cover'/>
+      <img src={img5} className='w-full h-fit object-cover'/>
+      <img src={img6} className='w-full h-fit object-cover'/>
+      <img src={img7} className='w-full h-fit object-cover'/>
+      <img src={img8} className='w-full h-fit object-cover'/>
+    </div>
   )
 }
 
