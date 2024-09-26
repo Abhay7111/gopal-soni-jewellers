@@ -17,7 +17,7 @@ import { NavLink } from 'react-router-dom';
 
 function Autoscrollsm() {
   return (
-    <div className='flex items-center justify-start gap-10'>
+    <div className='flex h-[460px] items-center justify-start gap-10'>
       <img src={img1} className='w-full h-fit object-cover'/>
       <img src={img2} className='w-full h-fit object-cover'/>
       <img src={img3} className='w-full h-fit object-cover'/>
