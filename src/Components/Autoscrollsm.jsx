@@ -17,15 +17,15 @@ import { NavLink } from 'react-router-dom';
 
 function Autoscrollsm() {
   return (
-    <div className='flex h-[460px] items-center justify-start gap-10'>
-      <img src={img1} className='w-full h-fit object-cover'/>
-      <img src={img2} className='w-full h-fit object-cover'/>
-      <img src={img3} className='w-full h-fit object-cover'/>
-      <img src={img4} className='w-full h-fit object-cover'/>
-      <img src={img5} className='w-full h-fit object-cover'/>
-      <img src={img6} className='w-full h-fit object-cover'/>
-      <img src={img7} className='w-full h-fit object-cover'/>
-      <img src={img8} className='w-full h-fit object-cover'/>
+    <div className='flex h-[400px] items-center justify-start gap-10'>
+      <img src={img1} className='w-full h-96 max-h-[395px] object-cover'/>
+      <img src={img2} className='w-full h-96 max-h-[395px] object-cover'/>
+      <img src={img4} className='w-full h-96 max-h-[395px] object-cover'/>
+      <img src={img5} className='w-full h-96 max-h-[395px] object-cover'/>
+      <img src={img6} className='w-full h-96 max-h-[395px] object-cover'/>
+      <img src={img7} className='w-full h-96 max-h-[395px] object-cover'/>
+      <img src={img8} className='w-full h-96 max-h-[395px] object-cover'/>
+      <img src={img3} className='w-full h-96 max-h-[395px] object-cover'/>
     </div>
   )
 }
