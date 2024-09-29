@@ -14,13 +14,13 @@ function Footer() {
                 <NavLink to="https://www.facebook.com/profile.php?id=61566358287625&mibextid=ZbWKwL" className='w-full h-10 bg-zinc-400/50 flex items-center justify-start px-2 rounded-md text-zinc-600 text-sm hover:text-blue-600'><i class="ri-facebook-fill text-2xl px-2 text-blue-500"></i> facebook</NavLink>
                 <NavLink to="https://www.instagram.com/gsj_ktr?igsh=MTRzcG50OGdkM3Zjdw%3D%3D&utm_source=qr" className='w-full h-10 bg-zinc-400/50 flex items-center justify-start px-2 rounded-md text-zinc-600 text-sm hover:text-blue-600'><i class="ri-instagram-line text-2xl px-2 text-red-500"></i> Instagram</NavLink>
             </div>
-
-    <div className='w-full h-14 relative flex items-center justify-center text-zinc-800'>
+        </div>
+    <div className='w-full h-auto relative flex items-center justify-center text-zinc-800'>
         <div className='relative w-[98%] rounded-xl flex items-center justify-center py-0.5 px-5 bg-white border border-zinc-400 '>
-            <a href="https://separatedigital.netlify.app" target='_blank' className='text-xl uppercase font-bold text line-clamp-1 py-1 rounded-lg px-3 hover:bg-zinc-300 transition-all'>Made by : Separatedigital.com</a>
-            <div  className=' w-12 h-full border-0 border-zinc-400 absolute top-0 right-0 rounded-full flex items-center justify-center'>
-                <div onMouseEnter={()=>setOpen(true)} className='cursor-pointer hover:bg-zinc-300 relative size-10 transition-all rounded-full flex items-center justify-center'>
-                <i className="ri-more-2-fill text-xl font-bold"></i>
+            <a href="https://separatedigital.netlify.app" target='_blank' className='text-sm uppercase font-bold text line-clamp-1 py-1 rounded-lg px-3 hover:bg-zinc-300 transition-all'>Made by : Separatedigital.com</a>
+            <div  className=' w-10 h-full border-0 border-zinc-400 absolute top-0 right-0 rounded-full flex items-center justify-center'>
+                <div onMouseEnter={()=>setOpen(true)} className='cursor-pointer relative size-10 transition-all rounded-full flex items-center justify-center'>
+                <i className="ri-more-2-fill text-lg font-bold"></i>
                 </div>
                 <div onMouseLeave={()=>setOpen(false)} className={` ${open ? 'block absolute border border-zinc-400 w-80 h-auto max-h-[70vh] overflow-y-auto bg-white bottom-full right-0 mb-3 rounded-2xl' : 'hidden w-0 h-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'} transition-opacity `}>
                         <ul className='px-2 py-2 w-full flex flex-col gap-2 '>
@@ -36,8 +36,6 @@ function Footer() {
             </div>
         </div>
     </div>
-
-        </div>
     </div>
   )
 }
