@@ -5,6 +5,18 @@ function Footer() {
   const [open, setOpen] = useState(false);
   return (
     <div className='flex flex-col items-center justify-center w-full h-fit py-5'>
+      <div onClick={()=>setOpen(false)} className={`${open ? "sm:hidden block w-full backdrop-blur-sm bg-zinc-200/40 h-screen bottom-0 right-0 absolute z-[99]" : 'w-0 h-0 absolute right-0' } transition-watermark`}>
+                <div className={` ${open ? 'sm:hidden block absolute border border-zinc-400 max-w-[90vw] min-w-[80vw] h-auto max-h-[70vh] overflow-y-auto bg-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mb-3 rounded-2xl' : 'hidden w-0 h-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'} transition-opacity `}>
+                        <ul className='px-2 py-2 w-full flex flex-col gap-2 '>
+                            <li><a target='_blank' href='tel:9452536334' className='text-sm font-medium uppercase hover:bg-zinc-300 transition-all rounded-md py-1.5 px-3 line-clamp-1 flex items-center justify-start gap-2'><i className="ri-smartphone-line text-xl font-medium"></i> 9452536334</a></li>
+                            <li><a target='_blank' href='https://wa.me/+916388705984?text=Hello%20Separate%20Digital%20Advertising%20team.%20I%20am%20interested%20to%20buy%20your%20services%20so%20can%20you%20please%20send%20me%20your%20details%20Thank%20you%20%F0%9F%98%8A' className='text-sm font-medium uppercase hover:bg-zinc-300 transition-all rounded-md py-1.5 px-3 line-clamp-1 flex items-center justify-start gap-2'><i className="ri-whatsapp-line text-xl font-medium"></i> 9452536334</a></li>
+                            <li><a target='_blank' href='mailto:info@separatedigital.com' className='text-sm font-medium uppercase hover:bg-zinc-300 transition-all rounded-md py-1.5 px-3 line-clamp-1 flex items-center justify-start gap-2'><i className="ri-mail-send-line text-xl font-medium"></i> info@separatedigital.com</a></li>
+                            <li><a target='_blank' href='https://separatedigital.netlify.app/purchase' className='text-sm font-medium uppercase hover:bg-zinc-300 transition-all rounded-md py-1.5 px-3 line-clamp-1 flex items-center justify-start gap-2'><i className="ri-bank-card-line text-xl font-medium"></i> Purchase Website</a></li>
+                            <li><a target='_blank' href='https://separatedigital.netlify.app/contact' className='text-sm font-medium uppercase hover:bg-zinc-300 transition-all rounded-md py-1.5 px-3 line-clamp-1 flex items-center justify-start gap-2'><i className="ri-contacts-line text-xl font-medium"></i> Contact Us</a></li>
+                            <li><a target='_blank' href='https://separatedigital.netlify.app/blog' className='text-sm font-medium uppercase hover:bg-zinc-300 transition-all rounded-md py-1.5 px-3 line-clamp-1 flex items-center justify-start gap-2'><i className="ri-news-line text-xl font-medium"></i> Blogs</a></li>
+                        </ul>
+                </div>
+                </div>
         <div className='flex flex-col items-center justify-start w-[60vw] gap-2'>
             <div className='w-full h-fit flex flex-col items-start justify-center gap-4 py-10'>
                 <NavLink to="https://maps.app.goo.gl/QXYq9BayCTFde36h9?g_st=iw" className='w-full h-10 bg-zinc-400/50 flex items-center justify-start px-2 rounded-md text-zinc-600 text-sm hover:text-blue-600'><i class="ri-map-pin-line text-2xl px-2 text-gray-500"></i> Location</NavLink>
@@ -22,7 +34,7 @@ function Footer() {
                 <div onMouseEnter={()=>setOpen(true)} className='cursor-pointer relative size-10 transition-all rounded-full flex items-center justify-center'>
                 <i className="ri-more-2-fill text-lg font-bold"></i>
                 </div>
-                <div onMouseLeave={()=>setOpen(false)} className={` ${open ? 'block absolute border border-zinc-400 w-80 h-auto max-h-[70vh] overflow-y-auto bg-white bottom-full right-0 mb-3 rounded-2xl' : 'hidden w-0 h-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'} transition-opacity `}>
+                <div onMouseLeave={()=>setOpen(false)} className={` ${open ? 'sm:block hidden absolute border border-zinc-400 w-80 h-auto max-h-[70vh] overflow-y-auto bg-white bottom-full right-0 mb-3 rounded-2xl' : 'hidden w-0 h-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'} transition-opacity `}>
                         <ul className='px-2 py-2 w-full flex flex-col gap-2 '>
                             <li><a target='_blank' href='tel:9452536334' className='text-sm font-medium uppercase hover:bg-zinc-300 transition-all rounded-md py-1.5 px-3 line-clamp-1 flex items-center justify-start gap-2'><i className="ri-smartphone-line text-xl font-medium"></i> 9452536334</a></li>
                             <li><a target='_blank' href='https://wa.me/+916388705984?text=Hello%20Separate%20Digital%20Advertising%20team.%20I%20am%20interested%20to%20buy%20your%20services%20so%20can%20you%20please%20send%20me%20your%20details%20Thank%20you%20%F0%9F%98%8A' className='text-sm font-medium uppercase hover:bg-zinc-300 transition-all rounded-md py-1.5 px-3 line-clamp-1 flex items-center justify-start gap-2'><i className="ri-whatsapp-line text-xl font-medium"></i> 9452536334</a></li>
@@ -32,7 +44,6 @@ function Footer() {
                             <li><a target='_blank' href='https://separatedigital.netlify.app/blog' className='text-sm font-medium uppercase hover:bg-zinc-300 transition-all rounded-md py-1.5 px-3 line-clamp-1 flex items-center justify-start gap-2'><i className="ri-news-line text-xl font-medium"></i> Blogs</a></li>
                         </ul>
                 </div>
-
             </div>
         </div>
     </div>

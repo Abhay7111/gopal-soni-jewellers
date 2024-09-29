@@ -17,3 +17,8 @@ html, body{
 ::-webkit-scrollbar{
   display: none;
 }
+
+
+.transition-watermark{
+  transition: all ease 0.5s;
+}
