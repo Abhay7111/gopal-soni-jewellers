@@ -31,7 +31,7 @@ function Footer() {
         <div className='relative w-[98%] rounded-xl flex items-center justify-center py-0.5 px-5 bg-white border border-zinc-400 '>
             <a href="https://separatedigital.netlify.app" target='_blank' className='text-sm uppercase font-bold text line-clamp-1 py-1 rounded-lg px-3 hover:bg-zinc-300 transition-all'>Made by : Separatedigital.com</a>
             <div  className=' w-10 h-full border-0 border-zinc-400 absolute top-0 right-0 rounded-full flex items-center justify-center'>
-                <div onMouseEnter={()=>setOpen(true)} className='cursor-pointer relative size-10 transition-all rounded-full flex items-center justify-center'>
+                <div onClick={()=>setOpen(true)} className='cursor-pointer relative size-10 transition-all rounded-full flex items-center justify-center'>
                 <i className="ri-more-2-fill text-lg font-bold"></i>
                 </div>
                 <div onMouseLeave={()=>setOpen(false)} className={` ${open ? 'sm:block hidden absolute border border-zinc-400 w-80 h-auto max-h-[70vh] overflow-y-auto bg-white bottom-full right-0 mb-3 rounded-2xl' : 'hidden w-0 h-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'} transition-opacity `}>
